@@ -1,1 +1,0 @@
-const SPORT_RADAR_ACCESS_TOKEN = 'x4dm5njwga2ypu6qjc7grfsg';
