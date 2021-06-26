@@ -3,7 +3,7 @@
 console.log("This works");
 
 
-var settings = {
+var teamsParameters = {
     "url": "data/teams.json",
     "method": "GET",
     "timeout": 0,
@@ -12,6 +12,12 @@ var settings = {
     },
 };
 
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
+const getTeams = () => {
+    $.ajax(teamsParameterseams).done(function (response) {
+        console.log(response);
+    });
+
+    setTimeout(function (){
+        let htmlStr = '';
+    })
+}
