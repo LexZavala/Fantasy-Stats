@@ -3,14 +3,27 @@
 console.log("This works");
 
 var settings = {
-    "url": "https://api.sportradar.us/nfl/official/trial/v6/en/games/0e00303b-ee60-4cf4-ad68-48efbe53901d/roster.json?api_key=x4dm5njwga2ypu6qjc7grfsg",
+    "url": "https://fly.sportsdata.io/v3/nfl/scores/json/Teams",
     "method": "GET",
     "timeout": 0,
+    "headers": {
+        "Ocp-Apim-Subscription-Key": "be8d5d8f1d234690b3a233d0055ee691"
+    },
 };
 
 $.ajax(settings).done(function (response) {
     console.log(response);
 });
+
+// var settings = {
+//     "url": "https://api.sportradar.us/nfl/official/trial/v6/en/games/0e00303b-ee60-4cf4-ad68-48efbe53901d/roster.json?api_key=x4dm5njwga2ypu6qjc7grfsg",
+//     "method": "GET",
+//     "timeout": 0,
+// };
+//
+// $.ajax(settings).done(function (response) {
+//     console.log(response);
+// });
 
 // let getOptions = {
 //     method: 'GET',
