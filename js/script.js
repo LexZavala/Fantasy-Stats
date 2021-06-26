@@ -4,7 +4,7 @@ console.log("This works");
 
 
 var settings = {
-    "url": "https://fly.sportsdata.io/v3/nfl/scores/json/Teams",
+    "url": "data/teams.json",
     "method": "GET",
     "timeout": 0,
     "headers": {
