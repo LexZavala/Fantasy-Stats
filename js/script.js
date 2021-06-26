@@ -18,7 +18,9 @@ const getTeams = () => {
         setTimeout(function (){
             let htmlStr = '';
             for (let team of teams){
-                htmlStr += `<div><h3>${team.City}</h3></div>`
+                htmlStr += `<div><h3>${team.City}</h3></div>
+            <div><img src=${team.WikipediaLogoUrl}></div>
+            `
             }
 
             $('#teamsContainer').html(htmlStr);
