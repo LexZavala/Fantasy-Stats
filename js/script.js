@@ -13,11 +13,18 @@ var teamsParameters = {
 };
 
 const getTeams = () => {
-    $.ajax(teamsParameterseams).done(function (response) {
-        console.log(response);
-    });
+    $.ajax(teamsParameters).done((teams) => {
+        console.log(teams);
+        setTimeout(function (){
+            let htmlStr = '';
+            for (let team of teams){
+                htmlStr += `<div><h3>${team.City}</h3></div>`
+            }
 
-    setTimeout(function (){
-        let htmlStr = '';
-    })
+            $('#teamsContainer').html(htmlStr);
+
+        }, 1000)
+    });
 }
+
+getTeams();
