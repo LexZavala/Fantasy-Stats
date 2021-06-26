@@ -19,7 +19,7 @@ const getTeams = () => {
             let htmlStr = '';
             for (let team of teams){
                 htmlStr += `<div><h3>${team.City}</h3></div>
-            <div><img src=${team.WikipediaLogoUrl}></div>
+            <div><img class="teamLogo" src=${team.WikipediaLogoUrl}></div>
             `
             }
 
