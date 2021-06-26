@@ -4,6 +4,7 @@ console.log("This works");
 
 let getOptions = {
     method: 'GET',
+    'X-Originating-IP': '70.121.129.79',
     headers: {
         'Content-Type': 'application/json',
         'Date':'Sat, 26 Jun 2021 17:50:53 GMT',
@@ -17,7 +18,7 @@ let getOptions = {
 };
 
 const apiCall = () => {
-    fetch("http://api.sportradar.us/nfl/official/trial/v6/en/games/0e00303b-ee60-4cf4-ad68-48efbe53901d/roster.json?api_key=x4dm5njwga2ypu6qjc7grfsg", getOptions)
+    fetch("http://api.sportradar.us/nfl/official/trial/v6/en/games/0e00303b-ee60-4cf4-ad68-48efbe53901d/roster.json?api_key=x4dm5njwga2ypu6qjc7grfsg")
         .then(resp => resp.json());
 }
 
