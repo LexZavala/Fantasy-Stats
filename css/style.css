@@ -5,9 +5,13 @@
 }
 
 #body{
-    background-color: red;
+    /*background-color: red;*/
 }
 
+.teamLogo {
+    height: 10em;
+    width: 11.5em;
+}
 
 title {
     margin-right: auto;
