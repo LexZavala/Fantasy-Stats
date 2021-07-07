@@ -28,20 +28,20 @@ const getTeams = () => {
                         <div class="circle"></div>
                         <img src="img/nike-blue-shoe.png">
                     </div>
-            <div class="info">
-                <h1 class="title">Nike Epic React Flyknit</h1>
-                <h3>A RUNNER'S CHOICE, <br>EXPERIENCE THE COMFORT</h3>
-                <div class="sizes d-flex justify-content-around">
-                    <button>9</button>
-                    <button class="active">10</button>
-                    <button>11</button>
-                    <button>12</button>
-                </div>
-                <div class="purchase">
-                    <button class="purchaseText">Add to cart<i class="fas fa-shopping-cart"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="info">
+                        <h1 class="title">Nike Epic React Flyknit</h1>
+                        <h3>A RUNNER'S CHOICE, <br>EXPERIENCE THE COMFORT</h3>
+                        <div class="sizes d-flex justify-content-around">
+                            <button>9</button>
+                            <button class="active">10</button>
+                            <button>11</button>
+                            <button>12</button>
+                        </div>
+                        <div class="purchase">
+                            <button class="purchaseText">Add to cart<i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>  
     </div>
             `
             }
