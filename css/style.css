@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +10,7 @@
 
 #body{
     /*background-color: red;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 .teamLogo {
@@ -13,6 +18,105 @@
     width: 11.5em;
 }
 
-title {
+.header {
     margin-right: auto;
 }
+
+.mainContainer {
+    width: 30%;
+    /*background-color: lightpink;*/
+
+}
+
+.cardContainer {
+    min-height: 45em;
+    width: 27em;
+    border-radius: 30px;
+    /*padding: 0 4em;*/
+    margin: 0 auto;
+    box-shadow: 0 20px 20px rgba(0,0, 0, 0.2), 0px 0px 35px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+}
+.sneaker {
+    min-height: 25vh;
+}
+.sneaker img {
+    width: 19em;
+    position: relative;
+    transition: all 0.75s ease-out;
+    margin-top: 3em;
+}
+
+.circle {
+    width: 13em;
+    height: 13em;
+    background: linear-gradient(45deg, #d3e05e, #7cb9dc, #3068ae );
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 3em;
+
+}
+
+.title {
+    font-size: 2.1em;
+    font-weight: bold;
+    padding-bottom: .8em;
+    padding-top: .6em;
+    margin-top: 1em;
+    transition: all 0.75s ease-out;
+}
+
+.info {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.info h3 {
+    font-size: 1.3em;
+    padding: .1em 0;
+    color: lightslategrey;
+    transition: all 0.75s ease-out;
+}
+.sizes {
+    margin-top: 4.2em;
+    transition: all 0.75s ease-out;
+}
+.sizes button {
+    margin: 0em .5em 0 .5em;
+    padding: .5em 2em;
+    background: none;
+    border: none;
+    box-shadow: 0 7px 10px rgba(0,0, 0, 0.2);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: small;
+    color: #343434;
+    transition: all 0.75s ease-out;
+}
+
+button.active {
+    background: lightslategrey;
+    color: whitesmoke;
+}
+
+.purchase {
+    transition: all 0.75s ease-out;
+    font-size: small;
+}
+
+.purchase button {
+    width: 100%;
+    height: 2em;
+    padding: 0;
+    margin: 2.5em 0 2em 0;
+    background: #d3e05e;
+    border: none;
+    color: #343434;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+
+
