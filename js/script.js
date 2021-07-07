@@ -20,7 +20,7 @@ const getTeams = () => {
             let htmlStr = '';
             for (let team of teams) {
                 htmlStr += `
-                <div class="mainContainer d-flex justify-content-center align-items-center">
+                <div class="mainContainer d-flex justify-content-center align-items-center col-3">
                     <div class="cardContainer">
                         <div class="sneaker d-flex align-items-center justify-content-center">
                             <div class="circle"></div>
