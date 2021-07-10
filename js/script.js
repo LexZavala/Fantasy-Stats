@@ -2,7 +2,6 @@
 
 console.log("This works");
 
-
 var teamsParameters = {
     "url": "data/teams.json",
     "method": "GET",
