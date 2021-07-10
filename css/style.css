@@ -29,11 +29,11 @@
 }
 
 .cardContainer {
-    min-height: 45em;
-    width: 27em;
+    min-height: 30em;
+    width: 20em;
     border-radius: 30px;
     /*padding: 0 4em;*/
-    margin: 0;
+    margin: 3em 1em;
     box-shadow: 0 20px 20px rgba(0,0, 0, 0.2), 0px 0px 35px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
 }
