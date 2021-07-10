@@ -19,6 +19,7 @@ const getTeams = () => {
     $.ajax(teamsParameters).done((teams) => {
         console.log(teams);
         setTimeout(function () {
+            let teamColor = "#" + "${PrimaryColor}";
             let htmlStr = '';
             for (let team of teams) {
                 htmlStr += `
@@ -29,7 +30,7 @@ const getTeams = () => {
                             <img class="teamLogo" src=${team.WikipediaLogoUrl}>
                         </div>
                         <div class="info">
-                            <h2 class="title">${team.City}</h2>
+                            <h2 class="title" style="color: #${team.PrimaryColor}" >${team.FullName}</h2>
                             <h3>HEAD COACH: ${team.HeadCoach}, <br>EXPERIENCE THE COMFORT</h3>
                             <div class="sizes d-flex justify-content-around">
                                 <p>This is some info about the team</p>
