@@ -29,8 +29,8 @@
 }
 
 .cardContainer {
-    min-height: 30em;
-    width: 22em;
+    min-height: 35em;
+    width: 23em;
     border-radius: 30px;
     /*padding: 0 4em;*/
     margin: 3em 1em;
@@ -41,16 +41,17 @@
     min-height: 25vh;
 }
 .sneaker img {
-    width: 15em;
+    /*width: 13em;*/
+    /*height: 20em;*/
     position: relative;
     transition: all 0.75s ease-out;
     margin-top: 3em;
 }
 
 .circle {
-    width: 10em;
-    height: 10em;
-    background: linear-gradient(45deg, #d3e05e, #7cb9dc, #3068ae );
+    width: 12em;
+    height: 12em;
+    /*background: linear-gradient(45deg, #d3e05e, #7cb9dc, #3068ae );*/
     position: absolute;
     border-radius: 50%;
     margin-top: 3em;
