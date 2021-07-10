@@ -11,6 +11,9 @@ var teamsParameters = {
     },
 };
 
+
+// Possible addition to info section >> <img class="teamName " src=${team.WikipediaWordMarkUrl}>
+
 ///// this works
 const getTeams = () => {
     $.ajax(teamsParameters).done((teams) => {
@@ -21,13 +24,13 @@ const getTeams = () => {
                 htmlStr += `
                 <div class="mainContainer  justify-content-center align-items-center col-3">
                     <div class="cardContainer justify-content-center align-items-center col">
-                        <div class="sneaker d-flex align-items-start justify-content-center">
+                        <div class="imageContainer d-flex align-items-start justify-content-center">
                             <div class="circle"></div>
                             <img class="teamLogo" src=${team.WikipediaLogoUrl}>
                         </div>
                         <div class="info">
-                            <h1 class="title">${team.City}</h1>
-                            <h3>A RUNNER'S CHOICE, <br>EXPERIENCE THE COMFORT</h3>
+                            <h2 class="title">${team.City}</h2>
+                            <h3>HEAD COACH: ${team.HeadCoach}, <br>EXPERIENCE THE COMFORT</h3>
                             <div class="sizes d-flex justify-content-around">
                                 <p>This is some info about the team</p>
                             </div>
@@ -49,7 +52,7 @@ const card = document.querySelector('.cardContainer');
 const container = document.querySelector('.mainContainer');
 
 const title = document.querySelector('.title');
-const sneaker = document.querySelector('.sneaker img');
+const logoImg = document.querySelector('.imageContainer img');
 const purchase = document.querySelector('.purchase');
 const description = document.querySelector('.info h3');
 const sizes = document.querySelector('.sizes');
@@ -67,7 +70,7 @@ container.addEventListener('mouseenter', function (e){
     card.style.transition = 'none';
     //POPOUT
     title.style.transform = 'translateZ(90px)';
-    sneaker.style.transform = 'translateZ(90px)';
+    logoImg.style.transform = 'translateZ(90px)';
     description.style.transform = 'translateZ(80px)';
     purchase.style.transform = 'translateZ(70px)';
     sizes.style.transform = 'translateZ(65px)';
@@ -80,7 +83,7 @@ container.addEventListener('mouseleave', function (e){
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
     //POPBACK
     title.style.transform ='translateZ(0px)';
-    sneaker.style.transform = 'translateZ(0px) rotateZ(0deg)';
+    logoImg.style.transform = 'translateZ(0px) rotateZ(0deg)';
     description.style.transform = 'translateZ(0px)';
     purchase.style.transform = 'translateZ(0px)';
     sizes.style.transform = 'translateZ(0px)';
