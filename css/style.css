@@ -16,6 +16,7 @@
 .teamLogo {
     height: 10em;
     width: 11.5em;
+    margin-top: 3em;
 }
 
 .header {
@@ -23,7 +24,7 @@
 }
 
 .mainContainer {
-    width: 30%;
+    /*width: 30%;*/
     /*background-color: lightpink;*/
 
 }
@@ -33,7 +34,7 @@
     width: 23em;
     border-radius: 30px;
     /*padding: 0 4em;*/
-    margin: 3em 1em;
+    margin: 3em;
     box-shadow: 0 20px 20px rgba(0,0, 0, 0.2), 0px 0px 35px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
 }
@@ -45,7 +46,6 @@
     /*height: 20em;*/
     position: relative;
     transition: all 0.75s ease-out;
-    margin-top: 3em;
 }
 
 .circle {
@@ -54,8 +54,6 @@
     /*background: linear-gradient(45deg, #d3e05e, #7cb9dc, #3068ae );*/
     position: absolute;
     border-radius: 50%;
-    margin-top: 3em;
-
 }
 
 .title {
