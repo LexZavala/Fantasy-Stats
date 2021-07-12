@@ -11,7 +11,6 @@ var teamsParameters = {
     },
 };
 
-
 // Possible addition to info section >> <img class="teamName " src=${team.WikipediaWordMarkUrl}>
 
 ///// this works
@@ -19,7 +18,6 @@ const getTeams = () => {
     $.ajax(teamsParameters).done((teams) => {
         console.log(teams);
         setTimeout(function () {
-            let teamColor = "#" + "${PrimaryColor}";
             let htmlStr = '';
             for (let team of teams) {
                 htmlStr += `
